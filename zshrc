@@ -19,6 +19,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cw='cower --rsort=votes -s "$*" | head -n 5'
 alias startvnc="x11vnc -display :0 -auth /var/lib/gdm/:0.Xauth -rfbauth ~/.vnc/passwd -forever -ncache 10 -ncache_cr"
+alias gitspec='bundle exec rspec `echo $(git st | grep _spec.rb | grep -v deleted | cut -f 2 -d "#" | cut -f 2 -d ":" | uniq)`'
+alias mvim='gvim'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -71,8 +73,8 @@ bindkey -M emacs '^N' history-substring-search-down
 export TERM="xterm-256color"
 
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:/home/andrew/.gem/ruby/2.2.0/bin
+# PATH=$PATH:/home/andrew/.gem/ruby/2.2.0/bin
 
-# PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
+PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
 autoload -U compinit
 compinit
