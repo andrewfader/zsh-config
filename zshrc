@@ -43,10 +43,10 @@ alias mvim='gvim'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux git screen bundler postgres rails ruby gem zsh-syntax-highlighting history-substring-search)
+plugins=(archlinux git screen bundler postgres rails ruby gem zsh-syntax-highlighting history-substring-search rvm)
 
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-# [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
 function _update_ruby_version()
 {
   typeset -g ruby_version=''
