@@ -4,7 +4,9 @@ export EDITOR="gvim"
 export GIT_EDITOR="vim"
 ZSH=$HOME/.oh-my-zsh
 # alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
-
+HISTFILE=~/.zsh_history
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
